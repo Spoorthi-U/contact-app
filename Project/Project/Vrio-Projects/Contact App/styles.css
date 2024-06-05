@@ -1,0 +1,128 @@
+body {
+  background: linear-gradient(to right, #c0c0c1, #ffffff);
+  font-family: "Arial", sans-serif;
+}
+
+.header {
+  background-color: #323235;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-list-header-container {
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header i {
+  margin-right: 10px;
+}
+
+.contact-list-header {
+  background-color: #3f51b5; 
+  color: #fff; 
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.form-control {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  transition: border-color 0.3s ease; 
+  width: 300px;
+}
+
+.form-control:focus {
+  border-color: #3f51b5; 
+  box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.2); 
+}
+
+
+.form-control::-moz-placeholder {
+  color: #999;
+}
+.form-control::placeholder {
+  color: #999;
+}
+
+
+.form-control:invalid {
+  border-color: #dc3545;
+}
+
+.btn-block {
+  border-radius: 5px;
+}
+
+.gender-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#addContact {
+  transition: background-color 0.3s ease;
+}
+
+#addContact:hover {
+  background-color: #26282b;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #efebeb;
+  transition: background-color 0.3s ease;
+}
+
+.form-check-inline .form-check-label img.gender-icon {
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.form-check-inline .form-check-input:checked + .form-check-label {
+  color: #000000;
+}
+
+.email-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.email-input {
+  width: 100px; 
+}
+
+.custom-logo {
+  width: 20px;
+  margin-right: 5px; 
+  vertical-align: middle; 
+}
+
+.custom-phone-icon {
+  width: 20px; 
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.small-width {
+  width: 100px; 
+  background-color: #474642; 
+  color: #fff;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="header p-4 mb-4 text-center">
+            <h2><i class="bi bi-journal-bookmark-fill"></i> Contact App</h2>
+        </header>
+        <div class="card p-4 mb-4 shadow-sm">
+            <div class="form-group">
+                <label for="name">Name <img src="icons/user.png" alt="Custom Logo" class="custom-logo"></label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" maxlength="64">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number <img src="icons/phone.png" alt="Custom Phone Icon" class="custom-phone-icon"></label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+            </div>
+            
+            <div class="form-group">
+                <label>Gender <i class="bi bi-gender-ambiguous"></i></label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                    <label class="form-check-label" for="male"><img src="icons/male.png" alt="#" class="gender-icon"> Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                    <label class="form-check-label" for="female"><img src="icons/female.png" alt="#" class="gender-icon"> Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <img src="icons/email icon.png" alt="Email Icon" class="email-icon">
+                        </span>
+                    </div>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+            </div>
+
+            <button id="addContact" class="btn btn-primary btn-sm rounded-pill small-width">Add Contact</button>
+        </div>
+        <div class="card p-4 shadow-sm">
+            <div class="contact-list-header-container">
+                <h4 class="contact-list-header mb-4"><i class="bi bi-people-fill"></i> Contact List</h4>
+            </div>
+
+            <table class="table table-bordered table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Gender</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="contactTable">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
